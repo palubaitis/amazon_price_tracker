@@ -11,12 +11,12 @@ export default function Footer({
         <div className="flex flex-row justify-between gap-8 mb-1">
           <ul className="flex flex-row gap-8 font-medium text-gray-600">
             <li>
-              <a href="/privacy" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="/terms" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Terms &amp; Conditions
               </a>
             </li>
@@ -28,7 +28,7 @@ export default function Footer({
           <span className="text-sm text-gray-500 sm:text-center">
             © {new Date().getFullYear()}{" "}
             <a href="/" className="hover:underline">
-              remix-saas™
+              price tracker™
             </a>
             . All Rights Reserved.
           </span>

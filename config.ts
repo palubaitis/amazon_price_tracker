@@ -11,7 +11,6 @@ const env = cleanEnv(process.env, {
   SESSION_SECRET: str(),
 
   RESEND_API_KEY: str(),
-  EMAIL_SENDER: str(),
 });
 
 const nodeEnv = env.NODE_ENV;
@@ -20,7 +19,6 @@ const sessionSecret = env.SESSION_SECRET;
 const databaseUrl = env.DATABASE_URL;
 const databaseAuthToken = env.DATABASE_AUTH_TOKEN;
 const resendApiKey = env.RESEND_API_KEY;
-const emailSender = env.EMAIL_SENDER;
 
 export {
   databaseUrl,
@@ -28,6 +26,5 @@ export {
   databaseAuthToken,
   resendApiKey,
   sessionSecret,
-  emailSender,
   nodeEnv,
 };

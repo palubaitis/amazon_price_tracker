@@ -5,7 +5,6 @@ import { ActionArgs } from "@remix-run/node";
 import { createUser } from "~/models/user.server";
 import { signupValidator } from "~/validators/user.validator";
 import { authenticator } from "~/services/auth.server";
-import { sendVerificationEmail } from "~/utils/emails/verification";
 import { getSession, commitSession } from "~/services/session.server";
 import { redirect } from "@remix-run/node";
 import AuthContainer from "~/components/layout/AuthContainer";
@@ -71,13 +70,13 @@ export async function loader({ request }: LoaderArgs) {
 }
 
 export async function action({ request }: ActionArgs) {
-  const result = await signupValidator.validate(await request.formData());
+  const result: any = await signupValidator.validate(await request.formData());
+  
   if (result.error) return validationError(result.error);
 
   const data = result.data;
   const user = await createUser(data.email, data.password);
 
-  await sendVerificationEmail(user.id, data.email);
 
   let session = await getSession(request.headers.get("cookie"));
   session.set(authenticator.sessionKey, user);

@@ -29,7 +29,7 @@ authenticator.use(
     if (!email || !password) invariant(false, "Missing email or password");
     let user = await login(email as string, password as string);
     if (!Object.keys(user).length)
-      invariant(false, "Invalid email or password");
+      throw new Error("Invalid email or password");
 
     return user;
   }),

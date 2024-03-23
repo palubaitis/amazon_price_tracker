@@ -4,7 +4,7 @@ import Header from "./Header";
 export default function AuthContainer({ children }: { children: any }) {
   return (
     <section className="w-full h-full bg-gray-50 p-full">
-      <div className="flex flex-col items-center justify-center justify-between h-full min-h-screen mx-auto g:py-0">
+      <div className="flex flex-col items-center justify-between h-full min-h-screen mx-auto">
         <div className="w-full shadow">
           <Header />
         </div>
@@ -13,8 +13,8 @@ export default function AuthContainer({ children }: { children: any }) {
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">{children}</div>
           </div>
         </div>
-        <div className="bottom-0 w-full">
-          <Footer />
+        <div className="w-full">
+          <Footer backgroundColor="bg-gray-50" />
         </div>
       </div>
     </section>
