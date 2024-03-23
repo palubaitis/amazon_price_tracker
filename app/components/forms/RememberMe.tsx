@@ -1,6 +1,11 @@
+import { Checkbox } from "~/components/ui/checkbox"
+
 export default function RememberMe() {
   return (
     <div className="flex items-center mb-4">
+
+      <Checkbox />
+
       <input
         type="checkbox"
         name="remember_me"
