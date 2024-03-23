@@ -16,7 +16,7 @@ export default function () {
   return (
     <AuthContainer>
       <div className="mb-10 sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="text-3xl font-bold text-center text-gray-900 ">
+        <h2 className="text-3xl font-bold text-center text-gray-800 ">
           Sign up for an account
         </h2>
       </div>
@@ -33,21 +33,21 @@ export default function () {
             name="password"
             label="Password"
             type="password"
-            placeholder="********"
+            placeholder="•••••••••"
             required={true}
           />
           <Input
             name="confirm_password"
             label="Confirm password"
             type="password"
-            placeholder="********"
+            placeholder="•••••••••"
             required={true}
           />
           <RememberMe />
           <SubmitButton label="Sign up" />
         </div>
         <div className="flex gap-1 mt-4 text-sm">
-          <p className="text-gray-500 text-sm">
+          <p className="text-sm text-gray-500">
             Already have an account?
             <a href="/login" className="font-medium">
               {" "}

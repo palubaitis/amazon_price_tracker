@@ -22,7 +22,7 @@ export default function RenderInput({
     placeholder,
     type,
     className:
-      "bg-gray-50 border border-opacity-80 border-gray-300 text-gray-900 sm:text-sm rounded-lg block w-full p-2.5 bg-gray-100",
+      "bg-gray-50 border border-opacity-80 border-gray-300 text-gray-800 sm:text-sm rounded-lg block w-full p-2.5 bg-gray-100 focus:outline-1 focus:outline-primary-blue",
   };
 
   switch (type) {

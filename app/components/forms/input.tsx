@@ -21,7 +21,7 @@ export default function Input({
     <div className="gap-5 max-[700px]:!block max-[700px]:!w-full">
       <label
         htmlFor={name}
-        className="block mb-1 text-left font-medium text-gray-900"
+        className="block mb-1 font-medium text-left text-gray-800"
       >
         {label}
       </label>

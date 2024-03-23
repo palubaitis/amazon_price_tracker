@@ -12,7 +12,7 @@ export default function () {
   return (
     <AuthContainer>
       <div className="mb-4 sm:mx-auto sm:w-full sm:max-w-md">
-        <h2 className="text-3xl font-bold text-center text-gray-900">
+        <h2 className="text-3xl font-bold text-center text-gray-800">
           Request password reset
         </h2>
         <h4 className="mt-2 text-center text-gray-500 text-normal">

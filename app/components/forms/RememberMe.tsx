@@ -2,21 +2,13 @@ import { Checkbox } from "~/components/ui/checkbox"
 
 export default function RememberMe() {
   return (
-    <div className="flex items-center mb-4">
-
-      <Checkbox />
-
-      <input
-        type="checkbox"
-        name="remember_me"
-        value=""
-        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
-      />
+   <div className="flex items-center space-x-2">
+      <Checkbox id="terms" />
       <label
-        htmlFor="default-checkbox"
-        className="ml-2 text-sm font-medium text-gray-700"
+        htmlFor="terms"
+        className="text-gray-500 text-gray-600"
       >
-        Remember me
+      Remember me
       </label>
     </div>
   );
