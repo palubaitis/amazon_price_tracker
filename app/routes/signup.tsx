@@ -46,12 +46,15 @@ export default function () {
           <RememberMe />
           <SubmitButton label="Sign up" />
         </div>
-        <div className="flex gap-1 mt-4 text-sm">
-          <p className="text-sm text-gray-500">
-            Already have an account?
-            <a href="/login" className="font-medium">
-              {" "}
-              Login instead
+        <div className="flex gap-1 mt-4 text-base">
+          <p className="text-gray-500 text-normal">
+            Already have an account? 
+            <a
+              href="/login"
+              className="font-medium text-[#2563EB]"
+            >
+               {" "}
+               Login instead
             </a>
           </p>
         </div>
