@@ -47,13 +47,13 @@ export default function () {
         </div>
         <div className="flex gap-1 mt-4 text-base">
           <p className="text-gray-500 text-normal">
-            Already have an account? 
+            Already have an account?
             <a
               href="/login"
               className="font-medium text-[#2563EB]"
             >
-               {" "}
-               Login instead
+              {" "}
+              Login instead
             </a>
           </p>
         </div>
@@ -71,7 +71,7 @@ export async function loader({ request }: LoaderArgs) {
 
 export async function action({ request }: ActionArgs) {
   const result: any = await signupValidator.validate(await request.formData());
-  
+
   if (result.error) return validationError(result.error);
 
   const data = result.data;
